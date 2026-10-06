@@ -188,6 +188,7 @@ export const services = [
   "Photo Editing",
   "Sports Photography",
   "Sports Video Editing",
+  "Sports Photo Editing",
   "Commercial Content",
   "Event Coverage",
 ];
@@ -197,6 +198,9 @@ export const serviceOptions = [
   "Photography + Videography",
   "Video Editing",
   "Photo Editing",
+  "Sports Photography",
+  "Sports Video Editing",
+  "Sports Photo Editing",
   "Sports Content",
   "Commercial Project",
   "Other",

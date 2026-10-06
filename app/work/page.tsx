@@ -20,7 +20,7 @@ export default function Work() {
         />
         <div className="work-tabs">
           <a href="#photographs">Photography</a>
-          <a href="#motion">Films</a>
+          <a href="#motion">Videography</a>
         </div>
         <section id="photographs">
           <div className="section-heading">
@@ -33,9 +33,9 @@ export default function Work() {
         </section>
         <section id="motion" className="work-films">
           <div className="section-heading">
-            <h2>Films</h2>
+            <h2>Videography</h2>
             <Link href="/films" className="text-link">
-              EXPLORE FILMS <ArrowUpRight size={17} />
+              EXPLORE VIDEOGRAPHY <ArrowUpRight size={17} />
             </Link>
           </div>
           <FilmGrid />

@@ -1,7 +1,7 @@
 import { ScrollText } from "@/components/scroll-text";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Play } from "lucide-react";
 import { HeroVideo } from "@/components/hero-video";
 import { HeroTitle, Reveal } from "@/components/motion";
 import { Gallery } from "@/components/gallery";
@@ -15,7 +15,7 @@ export default function Home() {
         <HeroVideo />
         <div className="hero-content">
           <div className="hero-kicker">
-            <span className="eyebrow">IN PURSUIT OF THE EXTRAORDINARY</span>
+            <span className="eyebrow">11+ YEARS BEHIND THE LENS</span>
             <span className="hero-location eyebrow">
               ABU DHABI, UAE
               <br />
@@ -31,12 +31,23 @@ export default function Home() {
               movement & emotion.
             </p>
           </div>
+          <div className="hero-actions">
+            <Link href="/work" className="hero-work-link">
+              EXPLORE THE WORK <ArrowUpRight size={17} />
+            </Link>
+            <a href="#showreel" className="hero-reel-link">
+              <span className="hero-reel-icon">
+                <Play size={13} fill="currentColor" />
+              </span>
+              WATCH SHOWREEL
+            </a>
+          </div>
         </div>
         <div className="hero-bottom">
           <a href="#intro" className="scroll-link">
             SCROLL TO EXPLORE <ArrowDown size={16} />
           </a>
-          <span>PHOTOGRAPHY · FILMS · EDITING</span>
+          <span>PHOTOGRAPHY · VIDEOGRAPHY · EDITING</span>
           <span className="hero-sample">ACCENTURE / 2023</span>
         </div>
       </section>
@@ -98,18 +109,18 @@ export default function Home() {
                 <em>final cut.</em>
               </ScrollText>
               <p>
-                Photography, films and thoughtful editing.
+                Photography and videography, from capture to edit.
                 <br />
-                One considered approach.
+                Specialising in video editing, photo editing and sports editing.
               </p>
             </div>
             <div className="service-list">
               {services.map((s, i) => (
                 <Link
                   key={s}
-                  href={`/contact?service=${encodeURIComponent(s === "Sports Photography" || s === "Sports Video Editing" ? "Sports Content" : s === "Commercial Content" ? "Commercial Project" : s === "Event Coverage" ? "Other" : s)}`}
+                  href={`/contact?service=${encodeURIComponent(s === "Commercial Content" ? "Commercial Project" : s === "Event Coverage" ? "Other" : s)}`}
                 >
-                  <span>0{i + 1}</span>
+                  <span>{String(i + 1).padStart(2, "0")}</span>
                   <h3>{s}</h3>
                   <ArrowUpRight size={23} strokeWidth={1} />
                 </Link>

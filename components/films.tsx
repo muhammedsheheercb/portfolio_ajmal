@@ -63,7 +63,7 @@ function VideoModal({
             )}
           </div>
           <div className="viewer-bottom">
-            <span>Photography · Films · Editing</span>
+            <span>Photography · Videography · Editing</span>
           </div>
         </motion.div>
       )}
@@ -73,7 +73,10 @@ function VideoModal({
 export function Showreel({ standalone = false }: { standalone?: boolean }) {
   const [video, setVideo] = useState<VideoSource | null>(null);
   return (
-    <section className={`showreel ${standalone ? "standalone" : ""}`}>
+    <section
+      id="showreel"
+      className={`showreel ${standalone ? "standalone" : ""}`}
+    >
       <div className="section-heading">
         <div>
           <span className="eyebrow">STORIES IN MOTION</span>

@@ -2256,3 +2256,193 @@ footer {
     opacity: 1 !important;
   }
 }
+
+/* A quieter frame around the hero, with two clear paths into the portfolio. */
+.hero-shade {
+  background:
+    linear-gradient(90deg, rgba(10, 16, 15, 0.42), transparent 85%),
+    linear-gradient(
+      180deg,
+      rgba(10, 16, 15, 0.58),
+      rgba(10, 16, 15, 0.12) 35%,
+      rgba(10, 16, 15, 0.86)
+    );
+}
+.hero-content {
+  padding-top: 135px;
+  padding-bottom: 125px;
+}
+.hero-kicker {
+  margin-bottom: 26px;
+}
+.hero-kicker > .eyebrow {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  letter-spacing: 0.17em;
+}
+.hero-kicker > .eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: #d1bb94;
+}
+.hero-description {
+  margin-top: 28px;
+  align-items: center;
+}
+.hero-description > .eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+.hero-description p {
+  color: #ece8df;
+  font-size: 29px;
+  padding-right: 0;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 28px;
+}
+.hero-work-link {
+  display: inline-flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 52px;
+  padding: 14px 21px;
+  border: 1px solid #eee9de80;
+  font-size: 11px;
+  letter-spacing: 0.13em;
+  transition:
+    background 0.25s,
+    border-color 0.25s;
+}
+.hero-work-link:hover {
+  background: #eee9de16;
+  border-color: #eee9de;
+}
+.hero-reel-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 48px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+.hero-reel-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #eee9de70;
+  border-radius: 50%;
+  transition: background 0.25s;
+}
+.hero-reel-link:hover .hero-reel-icon {
+  background: #eee9de22;
+}
+.hero-bottom {
+  border-top: 1px solid #eee9de30;
+  padding-top: 22px;
+}
+.hero-pause {
+  bottom: 93px;
+}
+@media (min-width: 1101px) {
+  .hero-title {
+    font-size: clamp(90px, 13vw, 230px);
+  }
+}
+@media (max-width: 850px) {
+  .hero-description p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 650px) {
+  .hero-content {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .hero-kicker {
+    margin-bottom: 28px;
+  }
+  .hero-kicker > .eyebrow {
+    font-size: 9px;
+    gap: 10px;
+    max-width: 165px;
+    letter-spacing: 0.1em;
+  }
+  .hero-kicker > .eyebrow::before {
+    width: 20px;
+    flex-shrink: 0;
+  }
+  .hero-description {
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 24px;
+  }
+  .hero-description > .eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.13em;
+  }
+  .hero-description p {
+    font-size: 29px;
+  }
+  .hero-actions {
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+  .hero-work-link {
+    padding: 11px 14px;
+    min-height: 48px;
+    font-size: 10px;
+    gap: 20px;
+  }
+  .hero-reel-link {
+    font-size: 9px;
+    gap: 8px;
+    letter-spacing: 0.06em;
+  }
+  .hero-reel-icon {
+    width: 29px;
+    height: 29px;
+  }
+  .hero-bottom {
+    padding-top: 18px;
+  }
+  .hero-pause {
+    bottom: 86px;
+  }
+}
+@media (max-width: 360px) {
+  .hero-actions {
+    gap: 12px;
+  }
+  .hero-work-link {
+    gap: 12px;
+    padding: 11px;
+  }
+  .hero-description p {
+    font-size: 26px;
+  }
+}
+@media (max-height: 700px) and (min-width: 651px) {
+  .hero-content {
+    padding-top: 110px;
+    padding-bottom: 120px;
+  }
+  .hero-title {
+    font-size: 10.5vw;
+  }
+  .hero-actions {
+    margin-top: 18px;
+  }
+  .hero-description {
+    margin-top: 20px;
+  }
+}

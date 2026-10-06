@@ -46,8 +46,10 @@ export default function About() {
             <p>
               For six years, I’ve worked in Abu Dhabi’s creative industry,
               including with Bigframe Film Photography Company. My practice
-              spans photography, videography, photo and video editing, and
-              sports content.
+              spans photography and videography, with three editing specialties:
+              video editing, photo editing and sports editing. I edit both
+              sports videos and sports photographs, bringing attention to
+              movement, timing and the key moments of each event.
             </p>
             <p>
               My journey began in Kerala: two years at Alpha Studio, followed by
