@@ -1,0 +1,123 @@
+[
+  {
+    "id": "nagarro-highlights",
+    "title": "Nagarro highlights",
+    "category": "Events",
+    "thumbnail": "/images/films/nagarro-highlights.jpg",
+    "videoUrl": "https://res.cloudinary.com/e7r13ecz/video/upload/v1791274954/Nagarro_Highilghts_.mp4",
+    "year": "",
+    "location": "",
+    "featured": true,
+    "placeholder": false
+  },
+  {
+    "id": "gulfood",
+    "title": "Gulfood",
+    "category": "Events",
+    "thumbnail": "/images/films/gulfood.jpg",
+    "videoUrl": "https://res.cloudinary.com/e7r13ecz/video/upload/v1791274930/GULFOOD_1.mp4",
+    "year": "",
+    "location": "",
+    "featured": true,
+    "placeholder": false
+  },
+  {
+    "id": "efther",
+    "title": "Efther",
+    "category": "Events",
+    "thumbnail": "/images/films/efther.jpg",
+    "videoUrl": "https://res.cloudinary.com/e7r13ecz/video/upload/v1791274444/Efther_1.mp4",
+    "year": "",
+    "location": "",
+    "featured": true,
+    "placeholder": false
+  },
+  {
+    "id": "accenture-2023",
+    "title": "Accenture 2023",
+    "category": "Events",
+    "thumbnail": "/images/films/accenture-2023.jpg",
+    "videoUrl": "https://res.cloudinary.com/e7r13ecz/video/upload/v1791274239/ACCENTURE_2023_1.mp4",
+    "year": "2023",
+    "location": "",
+    "featured": true,
+    "placeholder": false
+  },
+  {
+    "id": "marriott-emea",
+    "title": "Marriott EMEA Conference — Day 1",
+    "category": "Events",
+    "thumbnail": "/images/films/marriott-emea.jpg",
+    "videoUrl": "https://res.cloudinary.com/e7r13ecz/video/upload/v1791274069/MARRIOTT_EMEA_CONFERENCE_DAY_1_1.mp4",
+    "year": "",
+    "location": "",
+    "featured": true,
+    "placeholder": false
+  },
+  {
+    "id": "abb-adipec-2024",
+    "title": "ABB — ADIPEC 2024",
+    "category": "Events",
+    "thumbnail": "/images/films/abb-adipec-2024.jpg",
+    "videoUrl": "https://res.cloudinary.com/e7r13ecz/video/upload/v1791273829/ABB_ADIPEC_2024_Wrap_1.mp4",
+    "year": "2024",
+    "location": "",
+    "featured": true,
+    "placeholder": false
+  },
+  {
+    "id": "etp-all-hands-2024",
+    "title": "ETP All Hands 2024",
+    "category": "Events",
+    "thumbnail": "/images/films/etp-all-hands-2024.jpg",
+    "videoUrl": "https://res.cloudinary.com/e7r13ecz/video/upload/v1791273808/ETP_All_Hands_2024_1.mp4",
+    "year": "2024",
+    "location": "",
+    "featured": false,
+    "placeholder": false
+  },
+  {
+    "id": "sos-risk-outlook",
+    "title": "SOS Risk Outlook",
+    "category": "Corporate film",
+    "thumbnail": "/images/films/sos-risk-outlook.jpg",
+    "videoUrl": "https://res.cloudinary.com/e7r13ecz/video/upload/v1791273406/SOS_Risk_Outlook_Video_1_1.mp4",
+    "year": "",
+    "location": "",
+    "featured": false,
+    "placeholder": false
+  },
+  {
+    "id": "abb-film",
+    "title": "ABB",
+    "category": "Events",
+    "thumbnail": "/images/films/abb-film.jpg",
+    "videoUrl": "https://res.cloudinary.com/e7r13ecz/video/upload/v1791272927/ABB___1_1.mp4",
+    "year": "",
+    "location": "",
+    "featured": false,
+    "placeholder": false
+  },
+  {
+    "id": "abb-emirates",
+    "title": "ABB — Make it in the Emirates",
+    "category": "Events",
+    "thumbnail": "/images/films/abb-emirates.jpg",
+    "videoUrl": "https://res.cloudinary.com/e7r13ecz/video/upload/v1791272622/ABB_Make_it_in_the_emirates_1.mp4",
+    "year": "",
+    "location": "",
+    "featured": false,
+    "placeholder": false
+  },
+  {
+    "id": "world-utilities",
+    "title": "World Utilities",
+    "category": "Events",
+    "thumbnail": "/images/films/world-utilities.jpg",
+    "videoUrl": "https://res.cloudinary.com/e7r13ecz/video/upload/v1791272193/World_Utilitis_fin.mp4",
+    "year": "",
+    "location": "",
+    "featured": false,
+    "placeholder": false
+  }
+]
