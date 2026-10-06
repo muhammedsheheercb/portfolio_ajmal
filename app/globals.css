@@ -2446,3 +2446,84 @@ footer {
     margin-top: 20px;
   }
 }
+
+/* Keep touch scrolling available without page zoom gestures. */
+html {
+  touch-action: pan-x pan-y;
+}
+@media (max-width: 768px) {
+  input,
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
+
+/* Keep the opening frame focused on identity and concise introductions. */
+.hero-minimal .hero-title {
+  font-size: clamp(68px, 7.5vw, 144px);
+}
+.hero-minimal .hero-description {
+  margin-top: 32px;
+}
+.hero-minimal .hero-actions {
+  margin-top: 28px;
+}
+.nav.nav-hero {
+  border-bottom: 0;
+}
+.hero-minimal .hero-content {
+  justify-content: flex-end;
+  padding-bottom: clamp(48px, 8vh, 88px);
+}
+@media (max-width: 700px) {
+  .hero-minimal .hero-title {
+    font-size: 13vw;
+  }
+  .hero-minimal .hero-description {
+    margin-top: 25px;
+  }
+  .hero-minimal .hero-description > .eyebrow {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+  }
+}
+
+.hero-minimal .hero-summary {
+  margin-top: 14px;
+  max-width: 440px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #e0e0d9;
+}
+.hero-minimal .hero-work-link:not(.hero-about-link) {
+  background: #eee9de;
+  border-color: #eee9de;
+  color: #171b18;
+}
+.hero-minimal .hero-work-link:not(.hero-about-link):hover {
+  background: #d9ccb4;
+  border-color: #d9ccb4;
+}
+.hero-minimal .hero-about-link {
+  border-color: #eee9de80;
+  background: transparent;
+}
+.hero-minimal .hero-about-link:hover {
+  border-color: #ffffff55;
+  background: #ffffff0a;
+}
+@media (max-width: 700px) {
+  .hero-minimal .hero-summary {
+    font-size: 13px;
+    max-width: 330px;
+  }
+  .hero-minimal .hero-actions {
+    gap: 12px;
+  }
+  .hero-minimal .hero-about-link {
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 12px;
+  }
+}

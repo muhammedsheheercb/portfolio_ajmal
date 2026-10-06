@@ -1,12 +1,10 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { Pause, Play } from "lucide-react";
 import { media } from "@/data/portfolio";
 export function HeroVideo() {
   const ref = useRef<HTMLVideoElement>(null);
   const [enabled, setEnabled] = useState(false);
-  const [playing, setPlaying] = useState(false);
   const [failed, setFailed] = useState(false);
   useEffect(() => {
     const mq = matchMedia("(prefers-reduced-motion: reduce)");
@@ -14,7 +12,6 @@ export function HeroVideo() {
       setEnabled(!mq.matches);
       if (mq.matches) {
         ref.current?.pause();
-        setPlaying(false);
       }
     };
     sync();
@@ -29,7 +26,7 @@ export function HeroVideo() {
         if (!entry.isIntersecting) {
           video.pause();
         } else {
-          video.play().catch(() => setPlaying(false));
+          video.play().catch(() => {});
         }
       },
       { threshold: 0.1 },
@@ -66,26 +63,10 @@ export function HeroVideo() {
           playsInline
           preload="none"
           aria-hidden="true"
-          onPlay={() => setPlaying(true)}
-          onPause={() => setPlaying(false)}
           onError={() => setFailed(true)}
         />
       )}
       <div className="hero-shade" />
-      {enabled && !failed && (
-        <button
-          className="hero-pause icon-button"
-          aria-label={
-            playing ? "Pause background video" : "Play background video"
-          }
-          onClick={() => {
-            if (playing) ref.current?.pause();
-            else ref.current?.play().catch(() => setPlaying(false));
-          }}
-        >
-          {playing ? <Pause size={16} /> : <Play size={16} />}
-        </button>
-      )}
     </>
   );
 }

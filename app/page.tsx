@@ -1,7 +1,7 @@
 import { ScrollText } from "@/components/scroll-text";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight, Play } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { HeroVideo } from "@/components/hero-video";
 import { HeroTitle, Reveal } from "@/components/motion";
 import { Gallery } from "@/components/gallery";
@@ -11,44 +11,25 @@ import { media, services } from "@/data/portfolio";
 export default function Home() {
   return (
     <>
-      <section className="hero">
+      <section className="hero hero-minimal">
         <HeroVideo />
         <div className="hero-content">
-          <div className="hero-kicker">
-            <span className="eyebrow">11+ YEARS BEHIND THE LENS</span>
-            <span className="hero-location eyebrow">
-              ABU DHABI, UAE
-              <br />
-              KERALA, INDIA
-            </span>
-          </div>
           <HeroTitle />
           <div className="hero-description">
-            <span className="eyebrow">PHOTOGRAPHER & FILMMAKER</span>
-            <p>
-              Stories told through light,
-              <br />
-              movement & emotion.
-            </p>
+            <span className="eyebrow">PHOTOGRAPHER & VIDEOGRAPHER</span>
           </div>
+          <p className="hero-summary">
+            Capturing people, places and moments — based in Abu Dhabi, with
+            roots in Kerala.
+          </p>
           <div className="hero-actions">
             <Link href="/work" className="hero-work-link">
               EXPLORE THE WORK <ArrowUpRight size={17} />
             </Link>
-            <a href="#showreel" className="hero-reel-link">
-              <span className="hero-reel-icon">
-                <Play size={13} fill="currentColor" />
-              </span>
-              WATCH SHOWREEL
-            </a>
+            <Link href="/about" className="hero-work-link hero-about-link">
+              ABOUT ME <ArrowUpRight size={17} />
+            </Link>
           </div>
-        </div>
-        <div className="hero-bottom">
-          <a href="#intro" className="scroll-link">
-            SCROLL TO EXPLORE <ArrowDown size={16} />
-          </a>
-          <span>PHOTOGRAPHY · VIDEOGRAPHY · EDITING</span>
-          <span className="hero-sample">ACCENTURE / 2023</span>
         </div>
       </section>
       <section className="intro section-pad" id="intro">

@@ -68,7 +68,7 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify({
         from: process.env.ENQUIRY_FROM,
         // to: [profile.email],
-        to: ["sheheertrail@gmail.com"],
+        to: ["ajmalaboobaker22@gmail.com"],
         reply_to: email,
         subject: `Portfolio enquiry: ${service}`,
         text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\nService: ${service}\n\n${message}`,
