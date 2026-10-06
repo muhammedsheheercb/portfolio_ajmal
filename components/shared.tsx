@@ -48,7 +48,7 @@ export function ContactSection() {
         </Link>
         <div className="contact-bottom">
           <p>
-            Available for photography, filmmaking, editing,
+            Available for photography, videography, editing,
             <br className="desktop-only" /> events and creative collaborations.
           </p>
           <div className="contact-links">
@@ -155,7 +155,7 @@ export function Footer() {
           AJMAL ABOOBAKER<span className="accent">.</span>
         </Link>
         <p>
-          Photographer & Filmmaker
+          Photographer & Videographer
           <br />
           Abu Dhabi · Kerala
         </p>

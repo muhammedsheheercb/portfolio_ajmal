@@ -44,7 +44,7 @@ try {
   )
     throw Error("Mobile overflow");
   if (errors.length) throw Error(errors.join("\n"));
-  console.log("All 11 films, showreel and hero playback verified.");
+  console.log("All 11 videos, showreel and hero playback verified.");
 } finally {
   await browser.close();
 }

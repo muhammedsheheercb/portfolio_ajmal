@@ -44,7 +44,7 @@ export default function Home() {
               </ScrollText>
               <div className="intro-copy">
                 <ScrollText as="p">
-                  I’m Ajmal, a photographer and filmmaker based in Abu Dhabi.
+                  I’m Ajmal, a photographer and videographer based in Abu Dhabi.
                   For over eleven years, I’ve been finding stories in people,
                   places and the moments in between.
                 </ScrollText>
@@ -92,7 +92,7 @@ export default function Home() {
               <p>
                 Photography and videography, from capture to edit.
                 <br />
-                Specialising in video editing, photo editing and sports editing.
+                Specialising in video editing, photo editing and sport editing.
               </p>
             </div>
             <div className="service-list">

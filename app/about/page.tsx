@@ -6,7 +6,7 @@ import { media } from "@/data/portfolio";
 export const metadata: Metadata = {
   title: "About Ajmal",
   description:
-    "Meet Ajmal Aboobaker, a photographer, filmmaker and visual editor with 11+ years of experience in Abu Dhabi and Kerala.",
+    "Meet Ajmal Aboobaker, a photographer, videographer and visual editor with 11+ years of experience in Abu Dhabi and Kerala.",
   alternates: { canonical: "/about" },
   openGraph: { title: "About Ajmal | Ajmal Aboobaker", url: "/about" },
 };
@@ -23,7 +23,7 @@ export default function About() {
           <div className="about-portrait">
             <Image
               src={media.about}
-              alt="Ajmal Aboobaker, photographer and filmmaker"
+              alt="Ajmal Aboobaker, photographer and videographer"
               fill
               priority
               sizes="(max-width: 700px) 100vw, 45vw"
@@ -31,7 +31,7 @@ export default function About() {
           </div>
           <div className="biography">
             <span className="eyebrow">
-              AJMAL ABOOBAKER / PHOTOGRAPHER & FILMMAKER
+              AJMAL ABOOBAKER / PHOTOGRAPHER & VIDEOGRAPHER
             </span>
             <ScrollText>
               11+ years
@@ -39,7 +39,7 @@ export default function About() {
               <em>behind the lens.</em>
             </ScrollText>
             <p>
-              I’m a photographer, filmmaker and visual editor based in Abu
+              I’m a photographer, videographer and visual editor based in Abu
               Dhabi, with more than eleven years of professional experience
               across the UAE and India.
             </p>
@@ -47,9 +47,9 @@ export default function About() {
               For six years, I’ve worked in Abu Dhabi’s creative industry,
               including with Bigframe Film Photography Company. My practice
               spans photography and videography, with three editing specialties:
-              video editing, photo editing and sports editing. I edit both
-              sports videos and sports photographs, bringing attention to
-              movement, timing and the key moments of each event.
+              video editing, photo editing and sport editing. I edit both
+              sport videos and sport photographs, bringing attention to
+              movement, timing, and the key moments of each event.
             </p>
             <p>
               My journey began in Kerala: two years at Alpha Studio, followed by
@@ -85,7 +85,7 @@ export default function About() {
             </p>
             <p>
               Whether I’m capturing a single photograph or shaping a complete
-              film, I aim for visuals that feel natural, intentional and
+              video, I aim for visuals that feel natural, intentional and
               memorable. Working across India and the UAE has taught me to bring
               a versatile, dependable approach to every project.
             </p>

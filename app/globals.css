@@ -2216,7 +2216,7 @@ footer {
   }
 }
 
-/* Scale the name as a deliberate part of the cinematic composition. */
+/* Scale the name as a deliberate part of the video composition. */
 @media (min-width: 1101px) {
   .hero-title {
     font-size: clamp(90px, 14vw, 245px);

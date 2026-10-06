@@ -8,7 +8,7 @@ try {
   for (const [label, path] of [
     ["About", "/about"],
     ["Photography", "/photography"],
-    ["Films", "/films"],
+    ["Videography", "/films"],
     ["Work", "/work"],
     ["Contact", "/contact"],
     ["Home", "/"],
@@ -47,7 +47,7 @@ try {
   await page.getByRole("button", { name: "Open menu" }).click();
   await page
     .getByRole("dialog", { name: "Navigation" })
-    .getByRole("link", { name: "Films" })
+    .getByRole("link", { name: "Videography" })
     .click();
   await page.waitForURL("**/films");
   await expect.poll(() => page.evaluate(() => scrollY)).toBe(0);

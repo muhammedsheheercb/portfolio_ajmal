@@ -4,7 +4,7 @@ import { Showreel, FilmGrid } from "@/components/films";
 export const metadata: Metadata = {
   title: "Videography",
   description:
-    "Filmmaking, videography and visual editing by Ajmal Aboobaker in Abu Dhabi and Kerala.",
+    "Videography, video production and visual editing by Ajmal Aboobaker in Abu Dhabi and Kerala.",
   alternates: { canonical: "/films" },
   openGraph: { title: "Videography | Ajmal Aboobaker", url: "/films" },
 };
@@ -15,7 +15,7 @@ export default function Films() {
         <PageHeading
           label="02 / MOVING STORIES"
           title="Videography"
-          subtitle="Event coverage, corporate videos and stories in motion — filmed and edited with care."
+          subtitle="Event coverage, corporate videos and stories in motion — captured and edited with care."
         />
         <Showreel standalone />
         <div className="section-heading film-heading">

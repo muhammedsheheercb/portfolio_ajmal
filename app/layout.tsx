@@ -12,7 +12,7 @@ const description =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Ajmal Aboobaker | Photographer & Filmmaker in Abu Dhabi",
+    default: "Ajmal Aboobaker | Photographer & Videographer in Abu Dhabi",
     template: "%s | Ajmal Aboobaker",
   },
   description,
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Ajmal Aboobaker",
-    title: "Ajmal Aboobaker | Photographer & Filmmaker in Abu Dhabi",
+    title: "Ajmal Aboobaker | Photographer & Videographer in Abu Dhabi",
     description,
     url: siteUrl,
   },
   twitter: {
     card: "summary",
-    title: "Ajmal Aboobaker | Photographer & Filmmaker",
+    title: "Ajmal Aboobaker | Photographer & Videographer",
     description,
   },
   icons: { icon: "/icon.svg" },
@@ -53,7 +53,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: profile.name,
-    jobTitle: "Photographer & Filmmaker",
+    jobTitle: "Photographer & Videographer",
     url: siteUrl,
     email: profile.email,
     telephone: profile.phone,
@@ -64,7 +64,7 @@ export default function RootLayout({
       "Videography",
       "Video Editing",
       "Photo Editing",
-      "Sports Photography",
+      "Sport Photography",
     ],
   };
   return (

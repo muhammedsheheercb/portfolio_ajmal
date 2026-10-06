@@ -6,7 +6,7 @@ import { profile } from "@/data/portfolio";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Ajmal Aboobaker for photography, filmmaking, editing, events and creative collaborations in Abu Dhabi and Kerala.",
+    "Get in touch with Ajmal Aboobaker for photography, videography, editing, events and creative collaborations in Abu Dhabi and Kerala.",
   alternates: { canonical: "/contact" },
   openGraph: { title: "Contact | Ajmal Aboobaker", url: "/contact" },
 };
@@ -16,7 +16,7 @@ export default function Contact() {
       <PageHeading
         label="LET’S MAKE SOMETHING MEMORABLE"
         title="Let’s create"
-        subtitle="Photography. Filmmaking. Your next story."
+        subtitle="Photography. Video production. Your next story."
       />
       <div className="contact-layout">
         <div className="contact-details">
@@ -26,7 +26,7 @@ export default function Contact() {
             <em>together.</em>
           </h2>
           <p>
-            Available for photography, filmmaking, editing, commercial
+            Available for photography, videography, editing, commercial
             productions, events and creative collaborations.
           </p>
           <div className="contact-detail">

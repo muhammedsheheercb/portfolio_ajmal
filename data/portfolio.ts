@@ -1,5 +1,5 @@
 // Media is centralized here. Photography and the About portrait are supplied by the user.
-// Film URLs stream from the supplied Cloudinary library.
+// Video URLs stream from the supplied Cloudinary library.
 import filmData from "./films.json";
 
 export const profile = {
@@ -14,7 +14,7 @@ export type Category =
   | "Portraits"
   | "Events"
   | "Commercial"
-  | "Sports"
+  | "Sport"
   | "Lifestyle"
   | "Travel"
   | "Automotive"
@@ -156,7 +156,7 @@ export const categories = [
   "Portraits",
   "Events",
   "Commercial",
-  "Sports",
+  "Sport",
   "Lifestyle",
   "Travel",
 ] as const;
@@ -186,9 +186,9 @@ export const services = [
   "Videography",
   "Video Editing",
   "Photo Editing",
-  "Sports Photography",
-  "Sports Video Editing",
-  "Sports Photo Editing",
+  "Sport Photography",
+  "Sport Video Editing",
+  "Sport Photo Editing",
   "Commercial Content",
   "Event Coverage",
 ];
@@ -198,10 +198,10 @@ export const serviceOptions = [
   "Photography + Videography",
   "Video Editing",
   "Photo Editing",
-  "Sports Photography",
-  "Sports Video Editing",
-  "Sports Photo Editing",
-  "Sports Content",
+  "Sport Photography",
+  "Sport Video Editing",
+  "Sport Photo Editing",
+  "Sport Content",
   "Commercial Project",
   "Other",
 ];
@@ -211,7 +211,7 @@ export const experience = [
     place: "Abu Dhabi, UAE",
     company: "Bigframe Film Photography Company",
     description:
-      "Photography, videography, photo and video editing, and sports content.",
+      "Photography, videography, photo and video editing, and sport content.",
   },
   {
     years: "02",

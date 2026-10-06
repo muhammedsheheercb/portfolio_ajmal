@@ -43,7 +43,7 @@ function VideoModal({
           <div className="video-stage">
             {error ? (
               <div className="video-error">
-                <p>The film could not be loaded.</p>
+                <p>The video could not be loaded.</p>
                 <button className="text-link" onClick={() => setError(false)}>
                   Try again
                 </button>
@@ -100,7 +100,7 @@ export function Showreel({ standalone = false }: { standalone?: boolean }) {
       >
         <Image
           src={media.showreelPoster}
-          alt={`${media.showreelTitle} — featured film preview`}
+          alt={`${media.showreelTitle} — featured video preview`}
           fill
           sizes="100vw"
         />
@@ -113,7 +113,7 @@ export function Showreel({ standalone = false }: { standalone?: boolean }) {
           <span>PLAY SHOWREEL</span>
         </span>
       </button>
-      <p className="media-note">Featured film · {media.showreelTitle}.</p>
+      <p className="media-note">Featured video · {media.showreelTitle}.</p>
       <VideoModal
         key={video?.src || "closed"}
         video={video}
@@ -143,7 +143,7 @@ export function FilmGrid() {
             >
               <Image
                 src={film.thumbnail}
-                alt={`${film.title} — film preview`}
+                alt={`${film.title} — video preview`}
                 fill
                 sizes="(max-width: 700px) 100vw, 50vw"
               />
