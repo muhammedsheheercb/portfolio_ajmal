@@ -94,7 +94,13 @@ export function ContactForm() {
     </div>
   );
   return (
-    <form ref={form} onSubmit={submit} noValidate className="enquiry-form">
+    <form
+      ref={form}
+      onSubmit={submit}
+      noValidate
+      className="enquiry-form"
+      aria-busy={status === "sending"}
+    >
       <div className="form-heading">
         <span className="eyebrow">TELL ME WHAT YOU HAVE IN MIND</span>
         <p>A moment, a story, a new idea.</p>

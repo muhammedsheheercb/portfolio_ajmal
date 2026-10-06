@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { enquirySchema } from "@/lib/enquiry";
+import { enquiryEmail } from "@/lib/enquiry-email";
+import { profile } from "@/data/portfolio";
 export async function POST(request: NextRequest) {
   const origin = request.headers.get("origin");
   const configuredOrigin = process.env.NEXT_PUBLIC_SITE_URL;
@@ -57,7 +59,7 @@ export async function POST(request: NextRequest) {
       },
       { status: 503 },
     );
-  const { name, email, phone, service, message } = parsed.data;
+  const { email, service } = parsed.data;
   try {
     const result = await fetch("https://api.resend.com/emails", {
       method: "POST",
@@ -68,10 +70,10 @@ export async function POST(request: NextRequest) {
       body: JSON.stringify({
         from: process.env.ENQUIRY_FROM,
         // to: [profile.email],
-        to: ["ajmalaboobaker22@gmail.com"],
+        to: ["sheheertrail@gmail.com"],
         reply_to: email,
         subject: `Portfolio enquiry: ${service}`,
-        text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\nService: ${service}\n\n${message}`,
+        ...enquiryEmail(parsed.data),
       }),
       signal: AbortSignal.timeout(10000),
     });
