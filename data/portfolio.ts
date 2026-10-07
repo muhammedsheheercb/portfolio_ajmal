@@ -167,7 +167,8 @@ export const media = {
     "https://res.cloudinary.com/e7r13ecz/video/upload/v1791274069/MARRIOTT_EMEA_CONFERENCE_DAY_1_1.mp4",
   showreelTitle: "Marriott EMEA Conference — Day 1",
   showreelPoster: "/images/films/marriott-emea.jpg",
-  about: "/images/about/ajmal-aboobaker.png",
+  homeAbout: "/images/about/ajmal-home.jpg",
+  about: "/images/about/ajmal-about.jpg",
 };
 export type Film = {
   id: string;

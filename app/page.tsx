@@ -113,8 +113,8 @@ export default function Home() {
       <section className="home-about section-pad">
         <div className="home-about-image">
           <Image
-            src={media.about}
-            alt="Ajmal Aboobaker wearing headphones during an evening shoot"
+            src={media.homeAbout}
+            alt="Ajmal Aboobaker, photographer and videographer"
             fill
             sizes="(max-width: 700px) 100vw, 45vw"
           />
