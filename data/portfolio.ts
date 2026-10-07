@@ -61,13 +61,13 @@ const photo = (
 // Descriptive captions, not invented commission names or client credits.
 export const projects: Project[] = [
   photo(
-    "portrait-collection",
-    "Portrait collection",
-    "Portraits",
-    "ajmal-06.png",
+    "exhibition",
+    "Art in frame",
+    "Events",
+    "ajmal-07.png",
     "wide",
     1.964329643296433,
-    "Portfolio collage of a seated studio portrait and speakers at formal events",
+    "Exhibition photography collage of peacock artworks displayed in a gallery",
     true,
   ),
   photo(
@@ -101,13 +101,13 @@ export const projects: Project[] = [
     true,
   ),
   photo(
-    "exhibition",
-    "Art in frame",
-    "Events",
-    "ajmal-07.png",
+    "portrait-collection",
+    "Portrait collection",
+    "Portraits",
+    "ajmal-06.png",
     "wide",
     1.964329643296433,
-    "Exhibition photography collage of peacock artworks displayed in a gallery",
+    "Portfolio collage of a seated studio portrait and speakers at formal events",
     true,
   ),
   photo(
