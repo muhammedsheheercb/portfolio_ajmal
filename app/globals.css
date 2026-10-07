@@ -2459,6 +2459,20 @@ html {
   }
 }
 
+.preview-watermark {
+  width: 88px;
+  height: 88px;
+  font-size: 11px;
+}
+
+@media (max-width: 700px) {
+  .preview-watermark {
+    width: 72px;
+    height: 72px;
+    font-size: 10px;
+  }
+}
+
 /* Keep the opening frame focused on identity and concise introductions. */
 .hero-minimal .hero-title {
   font-size: clamp(68px, 7.5vw, 144px);

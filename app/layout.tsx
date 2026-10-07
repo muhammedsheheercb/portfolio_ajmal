@@ -3,6 +3,7 @@ import { Providers } from "@/components/providers";
 import { Navigation } from "@/components/navigation";
 import { Cursor } from "@/components/cursor";
 import { Footer } from "@/components/shared";
+import { PreviewWatermark } from "@/components/preview-watermark";
 import { profile } from "@/data/portfolio";
 import "./globals.css";
 export const siteUrl =
@@ -85,6 +86,7 @@ export default function RootLayout({
           <Footer />
           <Cursor />
         </Providers>
+        <PreviewWatermark />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
